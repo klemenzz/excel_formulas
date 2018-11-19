@@ -1,0 +1,1 @@
+=IF(ISNUMBER(SEARCH("yourtext"; G5)); "Yes"; "No")
