@@ -1,0 +1,5 @@
+'some functions useful in automating an accounting report - data cleaning and referencing between worksheets
+=VALUE(INDIRECT("'export'!"&CELL("address";D3)))
+=IF(F4>20;" > 20 days"; IF(AND(5<=F4;F4<=20);" 5 to 20 days";IF(F4<5;" < 5 days")))
+=VALUE(SUBSTITUTE(INDIRECT("'export'!"&CELL("address";Q3));",";"";1))
+=COUNTA(INDIRECT("'export'!"&"A:A"))+1
